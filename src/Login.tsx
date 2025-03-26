@@ -39,7 +39,7 @@ const Login = () => {
             .then(response => {
                 // console.log(response.user.uid);
                 console.log(response)
-                navigate('/LandingPage');
+                navigate('/Form');
             })
             .catch(error => {
                 console.log(error);

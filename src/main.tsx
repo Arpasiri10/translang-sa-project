@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import Login from './Login'
 import Register from './Register'
+import Form from './Form'
 import LandingPage from './LandingPage'
 import './index.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
@@ -28,6 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<AuthRoute><App /></AuthRoute>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/form" element={<Form />} />
         <Route path="/LandingPage" element={<LandingPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
